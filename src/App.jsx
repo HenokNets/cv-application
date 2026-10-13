@@ -104,7 +104,7 @@ function App() {
             <p>End Date: {practicalFormData.endDate}</p>
           </section>
 
-          <button className="primary-button" type="button" onClick={handleEdit}>
+          <button className="secondary-button" type="button" onClick={handleEdit}>
             Edit CV
           </button>
         </section>
