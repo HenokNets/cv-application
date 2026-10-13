@@ -11,13 +11,19 @@ function App() {
     endDate: "",
   });
 
+  const [generalFormData, setgeneralFormData] = useState({
+    name: "",
+    email: "", 
+    phone: "",
+  });
+
   return (
     <>
       <EducationalExperience
         formData={eduFormData}
         setFormData={setEduFormData}
       />
-      <GeneralInformation />
+      <GeneralInformation formData={generalFormData} setFormData={setgeneralFormData} />
       <PracticalExperience />
     </>
   );
