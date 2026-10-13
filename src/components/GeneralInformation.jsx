@@ -35,7 +35,6 @@ export default function GeneralInformation({ formData, setFormData }) {
         onChange={onChange}
         value={formData.phone}
       />
-      <button type="button">Edit</button>
     </>
   );
 }

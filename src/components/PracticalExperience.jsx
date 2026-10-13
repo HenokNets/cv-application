@@ -52,7 +52,6 @@ export default function PracticalExperience({ formData, setFormData }) {
         value={formData.endDate}
         onChange={onChange}
       />
-      <button type="button">Edit</button>
     </>
   );
 }

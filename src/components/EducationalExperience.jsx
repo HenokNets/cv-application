@@ -33,7 +33,6 @@ export default function EducationalExperience({ formData, setFormData }) {
 
       <label htmlFor="endDate">End Date</label>
       <input type="date" id="endDate" value={formData.endDate} onChange={handleChange} />
-      <button type="button">Edit</button>
     </>
   );
 }
