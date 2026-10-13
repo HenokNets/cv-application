@@ -1,22 +1,15 @@
-export default function EducationalExperience({ formData, setFormData}) {
+export default function EducationalExperience({ formData, setFormData }) {
+  function handleChange(event) {
+    const { id, value } = event.target;
 
-    function handleSubmit(event) {
-        event.preventDefault();
-    }
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  }
 
-    function handleChange(event) {
-        const {id, value} = event.target;
-        
-        setFormData(prevData => ({
-            ...prevData,
-            [id]: value
-
-        }))
-
-
-    }
   return (
-    <form onSubmit={handleSubmit}>
+    <>
       <label htmlFor="schoolName">School Name</label>
       <input
         type="text"
@@ -40,9 +33,7 @@ export default function EducationalExperience({ formData, setFormData}) {
 
       <label htmlFor="endDate">End Date</label>
       <input type="date" id="endDate" value={formData.endDate} onChange={handleChange} />
-
-      <button type="submit">Submit</button>
       <button type="button">Edit</button>
-    </form>
+    </>
   );
 }
